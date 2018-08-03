@@ -1,0 +1,25 @@
+include ../icon/icon
+mixin mobile()
+	.mobile.container-fluid.no-paddings
+		.container
+			.row.align-items-center
+
+				.col-lg-7.mobile__content.order-lg-7
+					h2.mobile__title Excellent for Mobile Devices.
+					p.mobile__p Qisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius claritas. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.
+					ul.mobile__list
+						li.mobile__list-item 
+							+icon('list-marker',true)(width="21",height="21",class="mobile__list-icon")
+							span.mobile__list-text Nam liber tempor cum soluta nobis eleifend option;
+						li.mobile__list-item
+							+icon('list-marker',true)(width="21",height="21",class="mobile__list-icon")
+							span.mobile__list-text Option congue nihil imperdiet doming id quod mazim placerat facer;
+						li.mobile__list-item 
+							+icon('list-marker',true)(width="21",height="21",class="mobile__list-icon")
+							span.mobile__list-text Eodem modo typi, qui nunc nobis videntur parum futurum;
+						li.mobile__list-item
+							+icon('list-marker',true)(width="21",height="21",class="mobile__list-icon")
+							span.mobile__list-text Investigationes demonstraverunt lectores
+				.col-lg-5.order-lg-5
+					a.mobile__link(href="#")
+						img.img-fluid.mobile__img(src="img/iphone.png", alt="waxom on mobile phone")

@@ -1,0 +1,141 @@
+.slider
+    position relative
+    &__slide
+        max-height  100vh
+    &__controls
+        position absolute
+        top 0
+        bottom 0
+        right 0
+        left 0
+        margin auto    
+    &__arrow
+        fill #fff
+        opacity .5 
+        border none 
+        background-color transparent
+        transition all .2s ease-out
+        z-index 2
+    &__arrow-right
+        position absolute
+        width 40px
+        top 0
+        bottom 0
+        right 5%
+        margin auto
+    &__arrow-left
+        position absolute
+        width 40px
+        top 0
+        bottom 0
+        left 5%
+        margin auto
+    &__indicators
+        position absolute
+        bottom 5%
+        left 0
+        right 0
+        margin auto
+        text-align center
+        font-size 0
+        z-index 2
+    &__indicator
+        opacity .5
+        fill #ffffff
+        stroke none
+        vertical-align middle
+        margin 0 4px
+        border none 
+        background-color transparent
+        transition all .2s ease-out
+        
+    &__indicator svg 
+        
+        width 12px
+        height 12px
+    &__indicator_active svg
+
+        width 15px
+        height 15px
+    &__indicator_active
+        stroke color-primary
+        fill-opacity 0
+        
+    // &__indicator .circle-outline
+    //     display none
+
+    // &__indicator&__indicator_active .circle
+    //     display none
+    // &__indicator&__indicator_active .circle-outline
+    //     display inline-block 
+
+    &__indicator:hover
+        fill lighten(color-primary,20%)
+
+    &__indicator:active,
+    &__indicator:focus
+        fill color-primary
+
+    &__indicator_active:hover
+        stroke lighten(color-primary,20%)
+    &__indicator_active:active,
+    &__indicator_active:focus
+        stroke color-primary
+
+    &__arrow:hover
+        fill lighten(color-primary,20%)
+
+    &__arrow:active,
+    &__arrow:focus
+        fill color-primary
+    @media screen and (max-width sm-bp)
+        &__arrow
+            display none
+
+.slide
+    position relative
+    &__container
+        min-height 100vh
+        @media screen and (max-width md-bp)
+            min-height calc(100vh-136px)
+    &__content
+        // position absolute
+        // top 0
+        // left 0
+        // bottom 0
+        // right 0
+        // margin auto
+        text-align center
+        padding 140px 70px
+        @media screen and (max-width sm-bp)
+            padding 70px 15px
+    &__back-img
+        position absolute
+        top 0
+        left 0
+        bottom 0
+        right 0
+        margin auto
+        z-index -1
+        // height 1024px
+        // max-height 100vh
+
+        background-size cover
+        background-position center
+    &__pre-title
+        font-size 36px
+        font-family ralewaymedium
+        margin-bottom 14px
+        color #fff
+    &__title
+        font-size 52px
+        font-family ralewayextrabold
+        margin-bottom 19px
+        color #fff
+    &__p
+        font-size 16px
+        color #fff
+        line-height 24px
+    &__btn
+        margin-top 52px
+

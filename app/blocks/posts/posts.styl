@@ -1,0 +1,166 @@
+.posts
+	padding 80px 0
+	text-align center
+	&__list
+		margin-top 40px
+	&__title
+		font-size 30px
+		font-family ralewaysemibold 
+		color color-black
+		margin-bottom 24px
+	&__p
+		font-size 16px
+		font-family montserratlight 
+		color #8c8c8c
+		line-height 28px
+	&__filter
+		padding 40px 0
+	&__filter-btn
+		font-size 14px
+		font-family montserratlight 
+		color #8c8c8c
+		padding 10px 25px
+		border-radius 3px
+		border 1px solid #ebebeb
+		box-sizing border-box
+		background-color #fff
+		margin 0 5px
+		transition all .2s ease-out
+	&__filter-btn_selected
+		color #ffffff
+		background-color #998675
+	&__filter-btn:hover
+		background-color lighten(color-primary,90%)
+		color #8c8c8c
+	&__filter-btn:active,
+	&__filter-btn:focus
+		background-color lighten(color-primary,40%)
+		color #fff
+
+	&__item-description
+		padding 30px
+		position relative
+		transition all .2s ease-out
+		text-align left
+		border 1px solid #f8f8f8
+		border-top none
+		box-sizing border-box
+
+	&__item
+		text-decoration none
+		margin-bottom 30px
+		display inline-block
+		max-width 370px
+	&__date-container
+		position absolute
+		top 20px
+		left 20px
+		
+	&__date-date
+		font-size 24px
+		font-family montserratlight 
+		color #ffffff
+		line-height 20px
+		min-height 35px
+		background-color #363636
+		padding 9px 12px
+		border-radius 3px 3px 0 0
+		text-align center
+	&__link
+		font-size 14px
+		font-family montserratlight 
+		color #c7b299
+		transition all .2s ease-out
+	&__link::after
+		content ''
+		display inline-block
+		border-style solid
+		border-width 4px 0 4px 5px
+		border-color transparent transparent transparent #c7b299	
+		margin-left 9px	
+		transition all .2s ease-out
+	&__date-month
+		font-size 12px
+		font-family montserratultralight 
+		color #ffffff
+		line-height 14px
+		background-color #252525
+		min-height 25px
+		padding 9px 12px
+		border-radius 0 0 3px 3px
+		text-align center
+
+	&__item-title
+		font-size 20px
+		font-family ralewaymedium
+		color color-black
+		margin-bottom 20px
+		transition all .2s ease-out
+	&__item-p
+		font-size 14px
+		font-family montserratlight 
+		color #8c8c8c
+		line-height 22px
+		transition all .2s ease-out
+		margin-bottom 27px
+	&__item-hover-container
+		position relative
+		background-color black
+
+	&__item-img
+		display block
+		transition all .2s ease-out
+	&__item-content:hover &__item-description
+		background-color #362f2d
+		border-color #362f2d
+	&__item-content:hover &__item-p
+		color #fff
+	&__item-content:hover &__item-title,
+	&__item-content:hover &__item-link,
+	&__item-content:hover &__item-link::after
+		color #c7b299
+	&__item-content:hover &__item-img
+		opacity .4
+	&__item-content:hover &__date-date
+		background-color #c7b299
+	&__item-content:hover &__date-month
+		background-color #a48d72
+	&__link:hover
+		color lighten(color-primary,60%)
+	&__link:hover::after
+		border-left-color lighten(color-primary,50%)
+		transform translateX(2px)
+
+	&__link:active,
+	&__link:focus
+		color darken(color-primary,20%)
+	&__link:active::after,
+	&__link:focus::after
+		border-left-color darken(color-primary,20%)
+	
+	&__pagination
+		font-size 0
+		margin-top 10px
+	&__prev-page,
+	&__next-page
+		fill #c7b299
+		margin 0 4px
+		display inline-block
+		transition all .2s ease-out
+	&__prev-page:hover,
+	&__next-page:hover
+		fill darken(#c7b299,30%)
+	
+	&__prev-page:active,
+	&__next-page:active,
+	&__prev-page:focus,
+	&__next-page:focus,	
+		fill darken(#c7b299,60%)	
+
+	&__disabled-page
+		fill #d1d1d1 !important
+		cursor initial
+	
+
+
+

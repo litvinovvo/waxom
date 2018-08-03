@@ -1,0 +1,122 @@
+.footer
+	&__main
+		background-color #191919
+		padding 80px 0
+	&__copy
+		background-color #111111
+		padding 45px 0
+		font-size 13px
+		font-family montserratlight 
+		color #545454
+		line-height 24px		
+	&__logo
+		margin-bottom 30px
+	&__p
+		margin-bottom 11px
+		font-size 14px
+		font-family montserratlight 
+		color #545454
+		line-height 24px
+		transition all .2s ease-out
+	&__read-more
+		font-size 14px
+		font-family montserratlight 
+		text-decoration none
+		color #d1d1d1
+		transition all .2s ease-out
+		margin-top 20px
+		display inline-block
+	&__read-more::after
+		content ''
+		display inline-block
+		border-style solid
+		border-width 4px 0 4px 5px
+		border-color transparent transparent transparent #d1d1d1	
+		margin-left 9px	
+		transition all .2s ease-out
+
+	&__col-header
+		font-size 24px
+		font-family ralewaybold
+		color #fff
+		margin-bottom 30px
+
+	&__post-date
+		font-size 12px
+		font-family montserratlight 
+		color #363636
+		margin-bottom 10px
+		margin-top 11px
+		transition all .2s ease-out
+	&__hr
+		border none
+		border-bottom-color #252525
+		border-bottom-width 2px	
+		border-bottom-style solid
+		margin-top 20px
+		margin-bottom 20px
+	&__link
+		text-decoration none
+		color #959595
+		transition all .2s ease-out
+	&__link_twitter
+		color #00bff3
+		text-decoration none
+	&__link_dribble
+		font-size 0
+		display block
+		margin 5px
+	
+	&__link_dark
+		color #545454
+
+	&__post
+		text-decoration none
+		display block
+	
+	&__post:hover &__post-date
+		color #fff
+	&__post:hover &__p
+		color #c7b299
+
+	&__link:hover
+		color #c7b299
+	&__read-more:hover::after
+		border-left-color #c7b299
+
+	&__vhr::after
+		content "|"
+		margin 0 10px
+
+	&__post:active &__post-date,
+	&__post:focus &__post-date
+		color darken(#fff,30%)
+	&__post:active &__p,
+	&__post:focus &__p
+		color darken(#c7b299,30%)
+
+	&__link:active,
+	&__link:focus
+		color darken(#c7b299,30%)
+	&__read-more:active::after
+	&__read-more:focus::after
+		border-left-color darken(#c7b299,30%)
+
+	&__img_dribble
+		transition all .2s ease-out
+
+	&__img_dribble:hover
+		transform scale(1.05)
+	&__img_dribble:focus,
+	&__img_dribble:active
+		transform scale(1)
+
+	@media screen and (max-width md-bp)
+		&__col
+			margin-bottom 50px
+		&__copy-col
+			text-align center
+		&__copy-col:not(:last-child)
+			margin-bottom 15px
+		&__dribble-container
+			justify-content center

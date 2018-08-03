@@ -1,0 +1,170 @@
+.header
+    padding-top 40px
+    padding-bottom 40px
+    
+    &_in-block
+        position absolute
+        width 100%
+        z-index 2
+    &__menu
+        transition all .2s
+    @media screen and (max-width: md-bp - 1)
+        position absolute
+        top 0
+        background-color #191919
+        text-align center
+        
+        &__logo
+            // margin-bottom 25px
+        &__menu
+            padding-top 20px
+            padding-bottom 20px
+            position absolute
+            top 100%
+            left 0
+            z-index 6
+            min-height calc(100vh - 136px)
+            // display none
+            background-color #191919
+            transform translateX(-100%)
+.burger
+    &__switch
+        display none
+    &__switch:checked ~ .header__menu    
+    // &__switch:checked ~ .header__menu .top-menu,
+    // &__switch:checked ~ .btn-group,
+    // &__switch:checked ~ .search-for
+        // animation fadeIn .3s forwards
+        // display block
+        transform translateX(0)
+    &__switch:checked ~ &__btn-wrapper &__icon
+        border-bottom transparent
+    &__switch:checked ~ &__btn-wrapper &__icon::before
+        transform-origin center
+        transform rotate(45deg)
+
+    &__switch:checked ~ &__btn-wrapper &__icon::after
+        transform-origin center
+        top 15px    
+        transform rotate(-45deg)
+        
+
+    &__icon
+        position relative
+        display block
+        z-index 5
+        cursor pointer
+        padding-top 30px
+    &__icon::before
+        content ''
+        position absolute
+        top 15px
+        left 0
+    &__icon::after
+        content ''
+        position absolute
+        top 0
+        left 0
+    &__icon::before,
+    &__icon::after,
+    &__icon
+        // background-color white
+        border-bottom 3px solid white
+        width 100%
+        height 0       
+        transition all .2s ease-in-out
+    &__btn
+        width 35px
+        height 40px
+        background transparent
+        border none
+        padding 0
+        margin 0
+        display inline-block
+        position relative
+        z-index 4
+    &__btn-wrapper
+        text-align center
+        display none
+        // margin-bottom 30px
+        @media screen and (max-width md-bp - 1)
+            display inline-block
+    // &__wrapper
+    //     @media screen and (max-width md-bp)
+    //         display none
+
+.top-menu
+    transition all .2s
+    &__item
+        display inline-block
+    &__link
+        font-family "montserratlight"
+        text-decoration none
+        color #ffffff
+        font-size 14px
+        line-height 24px
+        transition all .2s ease-out
+        display inline-block
+    &__item:not(:last-child)
+        margin-right 24px
+    &__link_active
+        color lighten(color-primary,20%)
+    &__link:hover 
+        color lighten(color-primary,20%)
+    &__link:active,
+    &__link:focus
+        color color-primary
+
+    @media screen and (max-width: md-bp - 1)
+        // display none
+        
+        margin-bottom 12px
+        &__item
+            display block
+            margin 20px 12px
+        &__item:not(:last-child)
+            margin-right 12px    
+        &__link
+            font-size 20px
+.btn-group
+    // display flex
+    // justify-content space-between
+    &__item
+        margin 10px
+        text-decoration none
+        fill  #fff
+        transition all .2s ease-out
+        display inline-block
+    &__item:hover
+        fill lighten(color-primary,20%)
+    &__item:active,
+    &__item:focus
+        fill color-primary
+    @media screen and (max-width: lg-bp)  
+        &__item
+            margin 5px 5px  
+    @media screen and (max-width: md-bp - 1)
+        // display none
+        &__item
+            margin 16px 16px
+.search-form
+    margin-top 15px
+    &__input
+        width 100%
+        border-top none 
+        border-left none 
+        border-right none 
+        border-bottom 3px solid #fff
+        background-color transparent
+        color #fff
+        font-size 18px
+        font-family "montserratlight"
+    @media screen and (max-width: md-bp - 1)
+        // display none
+
+
+@keyframes fadeIn
+    from
+        opacity 0
+    to
+        opacity 1

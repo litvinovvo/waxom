@@ -1,0 +1,78 @@
+
+include ../logo/logo
+mixin footer()
+	.footer
+		.footer__main
+			.container
+				.row 
+					.col-md-3.footer__col
+						+logo('h2')(class="footer__logo")
+						p.footer__p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci suscipit lobortis claritatem.
+						a.footer__link.footer__read-more(href="#") Read More
+					.col-md-3.footer__col
+						h3.footer__col-header Recent Posts	
+						a.footer__post(href="#")
+							.footer__post-date September 08, 2015
+							p.footer__p Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+						hr.footer__hr
+						a.footer__post(href="#")
+							.footer__post-date September 08, 2015
+							p.footer__p Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+						hr.footer__hr
+						a.footer__post(href="#")
+							.footer__post-date September 08, 2015
+							p.footer__p Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+					.col-md-3.footer__col
+						h3.footer__col-header Our Twitter	
+						p.footer__p 
+							a.footer__link.footer__link_twitter(href="#") @waxom 
+							|Cum soluta nobis eleifend option congue nihil imperdiet doming	
+						.footer__post-date
+							a.footer__link(href="#") 3 mins ago
+						hr.footer__hr
+						p.footer__p 
+							a.footer__link.footer__link_twitter(href="#") 
+							|Mirum est 
+							a.footer__link.footer__link_twitter(href="#") #envato 
+							|notare quam littera gothica, quam nunc putamus parum anteposuerit litterarum
+						.footer__post-date
+							a.footer__link(href="#") 5 hours ago
+						hr.footer__hr
+						p.footer__p 
+							|Soluta nobis option 
+							a.footer__link(href="#") bit.ly/1Hniso7	
+						.footer__post-date
+							a.footer__link(href="#") 20 days ago	
+					.col-md-3.footer__col
+						h3.footer__col-header Dribble Widget
+						.row.no-gutters.footer__dribble-container
+							.col-6.col-sm-6.col-md-12.col-lg-6.text-center
+								a.footer__link.footer__link_dribble(href="#")
+									img.img-fluid.footer__img_dribble(src="img/dribble1.jpg", alt="dribble post preview")
+							.col-6.col-sm-6.col-md-12.col-lg-6.text-center
+								a.footer__link.footer__link_dribble(href="#")
+									img.img-fluid.footer__img_dribble(src="img/dribble2.jpg", alt="dribble post preview")
+							.col-6.col-sm-6.col-md-12.col-lg-6.text-center
+								a.footer__link.footer__link_dribble(href="#")
+									img.img-fluid.footer__img_dribble(src="img/dribble3.jpg", alt="dribble post preview")
+							.col-6.col-sm-6.col-md-12.col-lg-6.text-center
+								a.footer__link.footer__link_dribble(href="#")
+									img.img-fluid.footer__img_dribble(src="img/dribble4.jpg", alt="dribble post preview")
+		.footer__copy
+			.container
+				.row
+					.col-md-7.footer__copy-col
+						|Copyright &copy; 2015
+						a.footer__link(href="#") Waxom
+						span.footer__vhr
+						a.footer__link.footer__link_dark(href="#") Privacy Policy
+						span.footer__vhr
+						a.footer__link.footer__link_dark(href="#") FAQ
+						span.footer__vhr
+						a.footer__link.footer__link_dark(href="#") Support
+					.col-md-5.text-right.footer__copy-col
+						|Designed by
+						a.footer__link(href="#") ThemeFire
+						span.footer__vhr
+						|Only on
+						a.footer__link(href="#") Envato Market						

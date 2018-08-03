@@ -1,0 +1,43 @@
+extends /blocks/layout-default/layout-default
+include ../blocks/header/header
+include ../blocks/slider/slider
+include ../blocks/services/services
+include ../blocks/ideas/ideas
+include ../blocks/promo/promo
+include ../blocks/projects/projects
+include ../blocks/footer/footer
+include ../blocks/video/video
+include ../blocks/mobile/mobile
+include ../blocks/stats/stats
+include ../blocks/posts/posts
+include ../blocks/partners/partners
+
+block head
+	- var dir = ''
+	- var pageTitle = 'Waxom';
+
+block content
+	+header()
+	main.page__main
+		section
+			+slider()
+		section
+			+services()
+		section
+			+ideas()
+		section
+			+promo()
+		section
+			+projects()
+		section
+			+video()
+		section
+			+mobile()
+		section
+			+stats()
+		section
+			+posts()
+		section
+			+partners()
+	+footer()
+

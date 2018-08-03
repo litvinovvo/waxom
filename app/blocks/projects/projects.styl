@@ -1,0 +1,114 @@
+.projects
+	padding 80px 0
+	text-align center
+	&__title
+		font-size 30px
+		font-family ralewaysemibold 
+		color color-black
+		margin-bottom 24px
+	&__p
+		font-size 16px
+		line-height 28px
+		font-family montserratlight 
+		color #8c8c8c
+	&__filter
+		padding 40px 0 20px 0
+	&__filter-btn
+		font-size 14px
+		font-family montserratlight 
+		color #8c8c8c
+		padding 10px 25px
+		border-radius 3px
+		border 1px solid #ebebeb
+		box-sizing border-box
+		background-color #fff
+		margin 0 5px
+		transition all .2s ease-out
+		margin-bottom 20px
+	&__filter-btn_selected
+		color #ffffff
+		background-color #998675
+	&__filter-btn:hover
+		background-color lighten(color-primary,90%)
+		color #8c8c8c
+	&__filter-btn:active,
+	&__filter-btn:focus
+		background-color lighten(color-primary,40%)
+		color #fff
+
+	&__item-description
+		padding 30px
+		position relative
+		background-color #fbfaf8
+		transition all .2s ease-out
+	&__item
+		text-decoration none
+		margin-bottom 30px
+		display inline-block
+		max-width 370px
+	&__item-description::before
+		content ''
+		display block
+		position absolute
+		border-top 0 solid transparent
+		border-bottom 10px solid #fbfaf8
+		border-left 15px solid transparent
+		border-right 15px solid transparent
+		width 0
+		height 0
+		top -10px
+		left 20px
+		transition all .2s ease-out
+	&__item-title
+		font-size 20px
+		font-family ralewaymedium
+		color #c7b29a
+		margin-bottom 14px
+		transition all .2s ease-out
+	&__item-p
+		font-size 14px
+		font-family montserratlight 
+		color #d1d1d1
+		line-height 28px
+		transition all .2s ease-out
+	&__item-hover-container
+		position relative
+		background-color black
+	&__item-img
+		display block
+		transition all .2s ease-out
+	&__item-content:hover &__item-description::before
+		border-bottom-color #362f2d
+	&__item-content:hover &__item-description
+		background-color #362f2d
+	&__item-content:hover &__item-p
+		color #c7b299
+	&__item-content:hover &__item-title
+		color #fff
+	&__item-content:hover &__item-img
+		opacity .4
+	&__item-hover
+		position absolute
+		top 50%
+		left 50%
+		transform translate(-50%,-50%)
+		opacity 0
+		text-align center
+	&__item-hover svg 
+		fill  #fff
+		margin 0 14px
+		transition all .2s ease-out
+	&__item-hover svg:hover 
+		fill #c7b299
+	&__item-hover svg:active,
+	&__item-hover svg:focus 
+		fill darken(#c7b299,30%)
+
+	&__item-content:hover &__item-hover
+		opacity 1
+	&__load-more
+		margin-top 10px
+
+	
+
+

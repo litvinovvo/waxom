@@ -1,0 +1,30 @@
+.logo
+    &__link
+        font-size 34px
+        color #ffffff
+        text-decoration none
+        font-family "ralewayregular"
+        transition all .2s ease-out
+        display inline-block
+        text-align center
+    &__icon
+        fill #fff
+        vertical-align middle
+        transition all .2s ease-out
+    &__text
+        display inline-block
+        vertical-align middle
+        letter-spacing -1px
+        margin-left -5px
+    &__link:hover
+        color #c7b299
+    &__link:hover &__icon
+        fill #c7b299
+
+    &__link:active,
+    &__link:focus
+        color darken(#c7b299,30%)
+
+    &__link:active &__icon,
+    &__link:focus &__icon
+        fill darken(#c7b299,30%)

@@ -1,0 +1,49 @@
+include ../icon/icon
+include ../btn/btn
+mixin posts()
+	.posts
+		.container
+			h2.posts__title Recent Posts.
+			p.posts__p Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
+			.posts__list.row.justify-content-center
+				.col-lg-4
+					a.posts__item(href="#")
+						.posts__item-content
+							.posts__item-hover-container
+								img.img-fluid.posts__item-img(src="img/post1.jpg", alt="post preview")
+								.posts__date-container
+									.posts__date-date 30
+									.posts__date-month Sep.
+							.posts__item-description
+								h4.posts__item-title Lorem ipsum dolor sit amet
+								p.posts__item-p Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
+								span.posts__link Read More
+				.col-lg-4
+					a.posts__item(href="#")
+						.posts__item-content
+							.posts__item-hover-container
+								img.img-fluid.posts__item-img(src="img/post2.jpg", alt="post preview")
+								.posts__date-container
+									.posts__date-date 30
+									.posts__date-month Sep.
+							.posts__item-description
+								h4.posts__item-title Lorem ipsum dolor sit amet
+								p.posts__item-p Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
+								span.posts__link Read More
+				.col-lg-4
+					a.posts__item(href="#")
+						.posts__item-content
+							.posts__item-hover-container
+								img.img-fluid.posts__item-img(src="img/post3.jpg", alt="post preview")
+								.posts__date-container
+									.posts__date-date 30
+									.posts__date-month Sep.
+							.posts__item-description
+								h4.posts__item-title Lorem ipsum dolor sit amet
+								p.posts__item-p Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
+								span.posts__link Read More
+			.posts__pagination
+				a.posts__prev-page.posts__disabled-page(href="#")
+					+icon('left-outline')(width="22",height="22")
+				a.posts__next-page(href="#")
+					+icon('right-outline')(width="22",height="22")

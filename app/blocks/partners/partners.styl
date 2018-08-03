@@ -1,0 +1,19 @@
+.partners
+	background-image url(../../img/partners-bg.jpg)
+	background-size cover
+	background-position center
+	padding 140px 0 80px 0
+	&__link
+		display inline-block
+		font-size 0
+		text-align center
+		margin-bottom 60px
+	&__img
+		transition all .2s ease-out
+		transform scale(.9)
+	&__link:hover &__img
+		transform scale(1)
+	&__link:active &__img,
+	&__link:focus &__img
+		transform scale(.9)
+	

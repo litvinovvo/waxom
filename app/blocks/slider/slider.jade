@@ -1,0 +1,59 @@
+include ../icon/icon
+include ../btn/btn
+mixin slider()
+    .slider.container-fluid.no-paddings.swiper-container
+        //- .slider__slide(style="background-image: url(/img/slide_mountain_w1920.jpg);")
+        .slider__slides.swiper-wrapper
+            .slide.swiper-slide
+                .slide__back-img(style="background-image: url(img/slide_mountain_w1920.jpg);")
+                //- img.slide__img.img-fluid(src="/img/slide_mountain_w1920.jpg", alt="mountain")
+                .container
+                    .row.align-items-center.justify-content-center.slide__container
+                        .col-auto-12
+                            .slide__content
+                                h4.slide__pre-title Unique and Modern Design
+                                h3.slide__title Portfolio PSD Template
+                                p.slide__p Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+                                +btn()(class="slide__btn")
+                                    |Get Started
+            .slide.swiper-slide
+                .slide__back-img(style="background-image: url(img/slide_mountain_w1920.jpg);")
+                //- img.slide__img.img-fluid(src="/img/slide_mountain_w1920.jpg", alt="mountain")
+                .container
+                    .row.align-items-center.justify-content-center.slide__container
+                        .col-auto-12
+                            .slide__content
+                                h4.slide__pre-title Unique and Modern Design
+                                h3.slide__title Portfolio PSD Template 2
+                                p.slide__p Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+                                +btn()(class="slide__btn")
+                                    |Get Started
+            .slide.swiper-slide
+                .slide__back-img(style="background-image: url(img/slide_mountain_w1920.jpg);")
+                //- img.slide__img.img-fluid(src="/img/slide_mountain_w1920.jpg", alt="mountain")
+                .container
+                    .row.align-items-center.justify-content-center.slide__container
+                        .col-auto-12
+                            .slide__content
+                                h4.slide__pre-title Unique and Modern Design
+                                h3.slide__title Portfolio PSD Template 3
+                                p.slide__p Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+                                +btn()(class="slide__btn")
+                                    |Get Started
+        button.slider__arrow.slider__arrow-left
+            +icon('arrow-left',true)(width="40",height="73")
+        button.slider__arrow.slider__arrow-right
+            +icon('arrow-right',true)(width="40",height="73")
+        .slider__indicators
+            //- button.slider__indicator.slider__indicator_active    
+            //-     +icon('circle-outline',true)(width="15",height="15",class="circle-outline")
+            //-     +icon('circle',true)(width="11",height="11",class="circle")
+            //- button.slider__indicator
+            //-     +icon('circle-outline',true)(width="15",height="15",class="circle-outline")
+            //-     +icon('circle',true)(width="11",height="11",class="circle")
+            //- button.slider__indicator
+            //-     +icon('circle-outline',true)(width="15",height="15",class="circle-outline")
+            //-     +icon('circle',true)(width="11",height="11",class="circle")
+                
+
+        

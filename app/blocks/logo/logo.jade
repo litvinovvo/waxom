@@ -1,0 +1,9 @@
+include ../icon/icon
+mixin logo(el)
+    .logo&attributes(attributes)
+        a.logo__link(href="#")
+            +icon("logo",true)(class="logo__icon",width="64",height="56")
+            if el == "h1"
+                h1.logo__text Waxom
+            else
+                h2.logo__text Waxom

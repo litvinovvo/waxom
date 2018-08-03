@@ -1,0 +1,25 @@
+include ../icon/icon
+mixin stats()
+	.stats.container-fluid.no-paddings
+		.container
+			.row.align-items-center.justify-content-center
+				.col-md-6.col-lg-2.stats__item
+					+icon('clients',true)(width="44",height="44",class="stats__icon")
+					.stats__value 3587
+					.stats__description satisfied clients
+				.col-md-6.col-lg-2.stats__item
+					+icon('cup',true)(width="48",height="44",class="stats__icon")
+					.stats__value 207
+					.stats__description cups of coffee
+				.col-md-6.col-lg-2.stats__item
+					+icon('message',true)(width="44",height="44",class="stats__icon")
+					.stats__value 2600
+					.stats__description blog posts
+				.col-md-6.col-lg-2.stats__item
+					+icon('heart',true)(width="44",height="44",class="stats__icon")
+					.stats__value 873
+					.stats__description likes
+				.col-md-6.col-lg-2.stats__item
+					+icon('dish',true)(width="54",height="44",class="stats__icon")
+					.stats__value 900
+					.stats__description we launched

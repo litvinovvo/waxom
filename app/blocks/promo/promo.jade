@@ -1,0 +1,15 @@
+include ../btn/btn
+
+mixin promo()
+	.promo.container-fluid.no-paddings
+		.container
+			.row.align-items-center
+				.col-md-8
+					h2.promo__title 
+						strong Waxom 
+						|Multipurpose WordPress Theme
+					p.promo__p Don't Forget to Rate the Template. Thanks so much!
+				.col-md-4.promo__btn
+					+btn() Purchase Now
+
+

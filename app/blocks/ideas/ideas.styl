@@ -1,0 +1,43 @@
+.ideas
+	background-color #fbfaf8
+	text-align center
+	padding-top 83px
+	&__title
+		margin-bottom 24px
+		font-size 30px
+		font-family ralewaysemibold 
+		color color-black
+	&__p
+		font-size 16px
+		font-family montserratlight 
+		color #8c8c8c
+		line-height 28px
+	&__imgs
+		margin-top 90px
+		font-size 0
+	&__img
+		position relative
+		transform-origin bottom
+		// transition transform .2s ease-out, z-index 0s .2s
+		transition transform .2s ease-out
+		z-index 1
+	&__img_left
+		transform-origin bottom left
+	&__img_right
+		transform-origin bottom right		
+	&__img:hover
+		transition transform .2s ease-out
+		transform scale(1.3)	
+		z-index 2
+	@media screen and (max-width md-bp)
+		&__img:hover
+			transform scale(1)
+
+@keyframes smoothz
+	from
+		z-index 1
+		// transfrom scale(1)
+	to
+		// opacity 1
+		z-index 2
+		transform scale(1.3)

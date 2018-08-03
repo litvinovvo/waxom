@@ -1,0 +1,58 @@
+head
+	block head
+
+	meta(charset='utf-8')
+	meta(name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, minimal-ui')
+	meta(http-equiv='X-UA-Compatible' content='IE=edge')
+	meta(name='imagetoolbar' content='no')
+	meta(name='msthemecompatible' content='no')
+	meta(name='cleartype' content='on')
+	meta(name='HandheldFriendly' content='True')
+
+	meta(name='format-detection' content='telephone=no')
+	meta(name='format-detection' content='address=no')
+
+	meta(name='google' value='notranslate')
+
+	meta(name='theme-color' content='#ffffff')
+
+	meta(name='apple-mobile-web-app-capable' content='yes')
+	meta(name='apple-mobile-web-app-status-bar-style' content='black-translucent')
+
+	link(sizes='57x57'   href=dir + 'apple-touch-icon-57x57.png'   rel='apple-touch-icon')
+	link(sizes='114x114' href=dir + 'apple-touch-icon-114x114.png' rel='apple-touch-icon')
+	link(sizes='72x72'   href=dir + 'apple-touch-icon-72x72.png'   rel='apple-touch-icon')
+	link(sizes='144x144' href=dir + 'apple-touch-icon-144x144.png' rel='apple-touch-icon')
+	link(sizes='60x60'   href=dir + 'apple-touch-icon-60x60.png'   rel='apple-touch-icon')
+	link(sizes='120x120' href=dir + 'apple-touch-icon-120x120.png' rel='apple-touch-icon')
+	link(sizes='76x76'   href=dir + 'apple-touch-icon-76x76.png'   rel='apple-touch-icon')
+	link(sizes='152x152' href=dir + 'apple-touch-icon-152x152.png' rel='apple-touch-icon')
+	link(sizes='180x180' href=dir + 'apple-touch-icon-180x180.png' rel='apple-touch-icon')
+
+	link(sizes='192x192' href=dir + 'favicon-192x192.png' rel='icon' type='image/png')
+	link(sizes='160x160' href=dir + 'favicon-160x160.png' rel='icon' type='image/png')
+	link(sizes='96x96'   href=dir + 'favicon-96x96.png'   rel='icon' type='image/png')
+	link(sizes='16x16'   href=dir + 'favicon-16x16.png'   rel='icon' type='image/png')
+	link(sizes='32x32'   href=dir + 'favicon-32x32.png'   rel='icon' type='image/png')
+
+	link(rel='manifest' href=dir + 'manifest.json')
+
+	meta(name='application-name' content=pageTitle || '')
+	meta(name='msapplication-tooltip' content=pageDescription || '')
+	meta(name='msapplication-TileColor' content='#ffffff')
+	meta(name='msapplication-TileImage' content=dir + 'mstile-large.png')
+	meta(name='msapplication-starturl' content='https://csssr.github.io/csssr-project-template/')
+	meta(name='msapplication-tap-highlight' content='no')
+	meta(name='msapplication-square70x70logo' content=dir + 'mstile-small.png')
+	meta(name='msapplication-square150x150logo' content=dir + 'mstile-medium.png')
+	meta(name='msapplication-wide310x150logo' content=dir + 'mstile-wide.png')
+	meta(name='msapplication-square310x310logo' content=dir + 'mstile-large.png')
+
+	//- http://realfavicongenerator.net/faq#why_ico_not_declared
+
+	title= pageTitle || ''
+	meta(name='description' content=pageDescription || '')
+	meta(name='keywords' content=pageKeywords || '')
+	//- <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
+	link(href=dir + 'assets/styles/app.min.css' rel='stylesheet')
+	//- link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css")

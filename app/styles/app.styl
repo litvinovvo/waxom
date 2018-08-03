@@ -1,0 +1,14 @@
+import('sprites/*')
+import('helpers/svg-size')
+@import 'helpers/variables'
+@import 'helpers/mixins'
+@import 'helpers/fonts'
+@import 'helpers/optimize'
+@import 'helpers/grid'
+
+import('../blocks/**/*')
+
+.page
+    &__main
+        @media screen and (max-width md-bp - 1)
+            margin-top 136px

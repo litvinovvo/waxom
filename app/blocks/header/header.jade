@@ -1,0 +1,45 @@
+include ../icon/icon
+include ../logo/logo
+mixin header()
+    header.header.header_in-block
+        .container
+            .row.align-items-center
+                .col-8.col-md-3.header__logo
+                    +logo('h1')
+                input.burger__switch(type="checkbox",id="menu-btn")
+                .col-4.burger__btn-wrapper
+                    button.burger__btn
+                        label.burger__icon(for="menu-btn")
+                //- .burger__wrapper.col-md-8
+                    
+                nav.col-md-9.header__menu.no-paddings
+                    .row.align-items-center
+                        ul.top-menu.col-md-10
+                            li.top-menu__item
+                                a.top-menu__link(href="#") Home
+                            li.top-menu__item
+                                a.top-menu__link(href="#") About Us
+                            li.top-menu__item
+                                a.top-menu__link.top-menu__link_active(href="#") Portfolio
+                            li.top-menu__item
+                                a.top-menu__link(href="#") Features
+                            li.top-menu__item
+                                a.top-menu__link(href="#") Blog
+                            li.top-menu__item
+                                a.top-menu__link(href="#") Pricing
+                            li.top-menu__item
+                                a.top-menu__link(href="#") Shortcodes
+                            li.top-menu__item
+                                a.top-menu__link(href="#") Contact
+                        .btn-group.col-md-2
+                            .row.no-gutters.justify-content-center
+                                .col-auto
+                                    a.btn-group__item(href="#")
+                                        +icon("cart")(width="18",height="24")
+                                .col-auto
+                                    a.btn-group__item(href="#")
+                                        +icon("search")(width="24",height="24")
+                        .search-form.col-md-12.hidden
+                            form(action="#" method="post")
+                                input.search-form__input(type="text",placeholder="keywords")
+            

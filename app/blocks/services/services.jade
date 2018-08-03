@@ -1,0 +1,27 @@
+include ../icon/icon
+
+mixin services()
+	.services&attributes(attributes)
+		.container
+			.row
+				.col-md-6.col-lg-3
+					a.services__item(href="#")
+						+icon('pencil',true)(class="services__icon",width="49",height="49")
+						h3.services__title Web & App Design
+						p.services__p Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.
+				.col-md-6.col-lg-3
+					a.services__item(href="#")
+						+icon('stack',true)(class="services__icon",width="44",height="49")
+						h3.services__title Development
+						p.services__p Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.
+				.col-md-6.col-lg-3
+					a.services__item(href="#")
+						+icon('cogwheel',true)(class="services__icon",width="44",height="49")
+						h3.services__title Customization
+						p.services__p Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.
+				.col-md-6.col-lg-3
+					a.services__item(href="#")
+						+icon('case',true)(class="services__icon",width="52",height="49")
+						h3.services__title Marketing
+						p.services__p Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.
+

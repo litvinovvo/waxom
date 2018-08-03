@@ -1,0 +1,82 @@
+include ../icon/icon
+include ../btn/btn
+mixin projects()
+	.projects
+		.container
+			h2.projects__title Our Latest Projects.
+			p.projects__p Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
+			.projects__filter
+				button.projects__filter-btn.projects__filter-btn_selected All
+				button.projects__filter-btn Web Design
+				button.projects__filter-btn Mobile App
+				button.projects__filter-btn Illustration
+				button.projects__filter-btn Photography
+			.projects__list.row.justify-content-center
+				.col-md-4
+					a.projects__item(href="#")
+						.projects__item-content
+							.projects__item-hover-container
+								img.img-fluid.projects__item-img(src="img/project1.jpg", alt="project preview")
+								.projects__item-hover
+									+icon('chain')(width="26",height="26")
+									+icon('lupa')(width="26",height="26")
+							.projects__item-description
+								h4.projects__item-title Claritas Etiam Processus
+								p.projects__item-p Photography. Nature
+				.col-md-4
+					a.projects__item(href="#")
+						.projects__item-content
+							.projects__item-hover-container
+								img.img-fluid.projects__item-img(src="img/project2.jpg", alt="project preview")
+								.projects__item-hover
+									+icon('chain')(width="26",height="26")
+									+icon('lupa')(width="26",height="26")
+							.projects__item-description
+								h4.projects__item-title Claritas Etiam Processus
+								p.projects__item-p Photography. Nature
+				.col-md-4
+					a.projects__item(href="#")
+						.projects__item-content
+							.projects__item-hover-container
+								img.img-fluid.projects__item-img(src="img/project3.jpg", alt="project preview")
+								.projects__item-hover
+									+icon('chain')(width="26",height="26")
+									+icon('lupa')(width="26",height="26")
+							.projects__item-description
+								h4.projects__item-title Claritas Etiam Processus
+								p.projects__item-p Photography. Nature
+				.col-md-4
+					a.projects__item(href="#")
+						.projects__item-content
+							.projects__item-hover-container
+								img.img-fluid.projects__item-img(src="img/project4.jpg", alt="project preview")
+								.projects__item-hover
+									+icon('chain')(width="26",height="26")
+									+icon('lupa')(width="26",height="26")
+							.projects__item-description
+								h4.projects__item-title Claritas Etiam Processus
+								p.projects__item-p Photography. Nature
+				.col-md-4
+					a.projects__item(href="#")
+						.projects__item-content
+							.projects__item-hover-container
+								img.img-fluid.projects__item-img(src="img/project5.jpg", alt="project preview")
+								.projects__item-hover
+									+icon('chain')(width="26",height="26")
+									+icon('lupa')(width="26",height="26")
+							.projects__item-description
+								h4.projects__item-title Claritas Etiam Processus
+								p.projects__item-p Photography. Nature
+				.col-md-4
+					a.projects__item(href="#")
+						.projects__item-content
+							.projects__item-hover-container
+								img.img-fluid.projects__item-img(src="img/project6.jpg", alt="project preview")
+								.projects__item-hover
+									+icon('chain')(width="26",height="26")
+									+icon('lupa')(width="26",height="26")
+							.projects__item-description
+								h4.projects__item-title Claritas Etiam Processus
+								p.projects__item-p Photography. Nature
+			+btn()(class="projects__load-more")
+				|Load More
